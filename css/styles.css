@@ -45,6 +45,10 @@ body {
 
 /* ----------------------------Header----------------------------- */
 
+.header-general {
+  border-bottom: 1px solid var(--top-line-color);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -134,10 +138,6 @@ body {
   color: var(--accent-color);
 }
 
-.line {
-  border: 1px solid var(--top-line-color);
-}
-
 /* ----------------------------Hero----------------------------- */
 
 .hero {
@@ -149,7 +149,7 @@ body {
 }
 
 .hero-title {
-  width: 696px;
+  max-width: 696px;
   margin: auto;
 
   font-weight: 900;
@@ -327,7 +327,7 @@ body {
 }
 
 .footer .logo {
-  display: block;
+  display: inline-block;
   margin-right: 0;
   margin-bottom: 20px;
 }
@@ -408,9 +408,6 @@ body {
   margin-top: var(--gallery-set-gap);
 }
 
-.gallery-img-thumb {
-}
-
 .gallery-img {
   display: block;
   max-width: 100%;
@@ -419,15 +416,8 @@ body {
 
 .gallery-text-box {
   padding: 20px 24px;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: var(--border-color);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--border-color);
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: var(--border-color);
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .gallery-title {
